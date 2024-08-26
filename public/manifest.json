@@ -1,0 +1,16 @@
+{
+    "short_name": "Next Test",
+    "name": "Next Web3Modal Wagmi Safe App",
+    "description": "Next Web3Modal Wagmi Safe App",
+    "icons": [
+      {
+        "src": "logo.svg",
+        "sizes": "any",
+        "type": "image/svg+xml"
+      }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+  }
