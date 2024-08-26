@@ -7,7 +7,7 @@ import { useState } from "react";
 import { useSafeAppsSDK } from "@safe-global/safe-apps-react-sdk";
 
 export function BatchTransaction() {
-  useAutoConnect();
+  // useAutoConnect();
 
   const { connector: activeConnector, chain, isConnected } = useAccount();
   const { sdk } = useSafeAppsSDK();

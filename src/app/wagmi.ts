@@ -11,7 +11,8 @@ export const metadata = {
   icons: ['https://avatars.githubusercontent.com/u/37784886']
 }
 
-// Create wagmiConfig
+// Enable the Domains using the allowedDomains prop in the safe connector
+
 export const config = createConfig({
   chains: [sepolia, arbitrum, mainnet ],
   transports: {
@@ -22,6 +23,7 @@ export const config = createConfig({
   connectors: [
     safe({
       allowedDomains: [/app\.safe\.global$/, /coinshift\.global$/],
+      shimDisconnect: true,
     }),
     injected(),
     walletConnect({ projectId: projectId!, metadata, showQrModal: false }), // showQrModal must be false.
