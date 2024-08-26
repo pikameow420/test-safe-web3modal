@@ -2,7 +2,7 @@ import { http, createConfig } from "wagmi";
 import { arbitrum, mainnet, sepolia} from "wagmi/chains";
 import { injected, safe, walletConnect } from "wagmi/connectors";
 
-export const projectId = process.env.NEXT_PROJECT_ID
+export const projectId = process.env.NEXT_PUBLIC_PROJECT_ID
 
 export const metadata = {
   name: 'Safe Connector Test',
