@@ -2,12 +2,10 @@
 
 import { useAccount } from "wagmi";
 import { useSendUSDC } from "../useSendUSDC";
-import { useAutoConnect } from "../useAutoConnect";
 import { useState } from "react";
 import { useSafeAppsSDK } from "@safe-global/safe-apps-react-sdk";
 
 export function BatchTransaction() {
-  // useAutoConnect();
 
   const { connector: activeConnector, chain, isConnected } = useAccount();
   const { sdk } = useSafeAppsSDK();

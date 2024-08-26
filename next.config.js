@@ -14,7 +14,7 @@ const nextConfig = {
                 headers: [
                     {
                         key: 'Access-Control-Allow-Origin',
-                        value: '*',
+                        value: 'https://app.safe.global https://*.coinshift.global;',
                     },
                     {
                         key: 'Access-Control-Allow-Methods',
