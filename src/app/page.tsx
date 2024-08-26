@@ -7,7 +7,7 @@ import { useAccount } from "wagmi";
 export default function Home() {
   const {isConnected} = useAccount()
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-center gap-y-8 p-24">
       <ConnectButton />
       {isConnected && <BatchTransaction />}
     </main>
