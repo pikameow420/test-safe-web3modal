@@ -23,7 +23,7 @@ export const config = createConfig({
   connectors: [
     safe({
       allowedDomains: [/app\.safe\.global$/, /coinshift\.global$/],
-      shimDisconnect: true,
+      shimDisconnect: false,
     }),
     injected(),
     walletConnect({ projectId: projectId!, metadata, showQrModal: false }), // showQrModal must be false.
